@@ -5,4 +5,6 @@ You should specify url start with http. For example: https://mail.ru
 
 First build docker image from Dockerfile
 
-Run container with mounting /tmp/favicons from container to host to save results
+Run container mounting /tmp/favicons container to host to save results:
+
+docker run --rm --mount type=bind,src=/tmp/favicons,dst=/tmp/favicons <IMAGE> <ULR>
