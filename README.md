@@ -10,6 +10,6 @@ Run container mounting /tmp/favicons container to host to save results:
 ```
 docker run --rm --mount type=bind,src=/tmp/favicons,dst=/tmp/favicons <IMAGE> <ULR>
 ```
-INAMGE - docker image id
+IMAGE - docker image id
 
 URL - url to download favicon in container path /tmp/favicons
